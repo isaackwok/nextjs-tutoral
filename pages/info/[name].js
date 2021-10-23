@@ -1,10 +1,11 @@
 import { useRouter } from 'next/router';
-import intro from '../../data/intro';
+import intro from '../../data/intro.json';
 
+// route: /info/{name}
 const ShowInfoPage = (props) => {
     const router = useRouter();
-    const { userName } = router.query;
-    const info = intro[userName];
+    const { name } = router.query;
+    const info = intro[name];
     return (
         <>
             <h1>Information of: {info?.name}!</h1>
