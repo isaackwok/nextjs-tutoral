@@ -5,7 +5,7 @@ export default function MetroHome({ stations }) {
             <p className="text-2xl">點擊車站以查詢詳細資料:</p>
             {stations.map(station => (
                 <p className="text-blue-500 text-xl underline" key={station['捷運站代號']}>
-                    <NextLink href={`/ssr/${station['捷運站代號']}`}><a>{station['站名']}</a></NextLink>
+                    <NextLink href={`/metro/ssr/${station['捷運站代號']}`}><a>{station['站名']}</a></NextLink>
                 </p>
             ))}
         </>
