@@ -10,7 +10,7 @@ const links = [
 
 export default function Navbar() {
     return (
-        <div className="flex bg-green-500 text-white justify-end shadow-lg">
+        <div className="flex bg-red-500 text-white justify-end shadow-lg">
             {links.map(link =>
                 <div key={link.href} className="p-4 cursor-pointer hover:bg-green-100 hover:text-gray-400 hover:underline">
                     <NextLink href={link.href}>
