@@ -4,8 +4,10 @@ const links = [
     { text: "Homepage", href: "/" },
     { text: "Greeting to Isaac", href: "/greeting/Isaac" },
     { text: "SSR Stations", href: "/metro/ssr" },
-    { text: "SSG Stations", href: "/metro/ssg" },
+    // { text: "SSG Stations", href: "/metro/ssg" },
+    { text: "Gallery", href: "/gallery" },
 ]
+
 export default function Navbar() {
     return (
         <div className="flex bg-green-500 text-white justify-end shadow-lg">
